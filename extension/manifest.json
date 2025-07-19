@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube QnA Bot",
+  "version": "1.0",
+  "description": "Ask questions about YouTube videos.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon128.png"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
