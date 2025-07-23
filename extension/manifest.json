@@ -2,10 +2,16 @@
   "manifest_version": 3,
   "name": "YouTube QnA Bot",
   "version": "1.0",
-  "description": "Ask questions about YouTube videos.",
+  "description": "Ask questions about YouTube videos using AI",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["https://www.youtube.com/*"],
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icons/icon128.png"
+    "default_popup": "popup.html"
   },
-  "permissions": ["activeTab", "scripting"]
+  "web_accessible_resources": [
+    {
+      "resources": ["style.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
